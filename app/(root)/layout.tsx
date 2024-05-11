@@ -1,9 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+import StreamVideoProvider from "@/providers/StreamClientProvider";
 import React, { ReactNode } from "react";
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
+    <StreamVideoProvider>
     <main className="relative">
       <Navbar/>
       <div className="flex">
@@ -13,7 +15,8 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
         </section>
       </div>
       footer
-    </main>
+  </main>
+    </StreamVideoProvider>
   );
 };
 
