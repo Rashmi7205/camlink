@@ -9,7 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Meetings:",
-  description: "",
+  description: "Video Calling App",
+  icons:{
+    icon:'/icons/logo.svg'
+  }
 };
 
 export default function RootLayout({
