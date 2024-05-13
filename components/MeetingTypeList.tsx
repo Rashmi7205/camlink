@@ -14,7 +14,7 @@ import ReactDatePicker from "react-datepicker";
 const MeetingTypeList = () => {
   const [meetingState, setMeetingState] = useState<
     "isScheduleMeeting" | "isJoiningMeeting" | "isInstantMeeting" | undefined
-  >();
+  >(undefined);
 
   const [values, setValues] = useState({
     dateTime: new Date(),
@@ -161,6 +161,17 @@ const MeetingTypeList = () => {
         buttonText="Start Meeting"
         handleClick={createMeeting}
       />
+      <MeetingModal
+        isOpen={meetingState === "isJoiningMeeting"}
+        onClose={() => {
+          setMeetingState(undefined);
+        }}
+        className="text-center"
+        title="Type Link Here"
+        buttonText="Join Meeting"
+        handleClick={()=>router.push(values.link)}
+      />
+      
     </section>
   );
 };
