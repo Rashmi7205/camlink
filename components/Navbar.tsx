@@ -10,14 +10,14 @@ const Navbar = () => {
       <Link href="/" className="flex items-center gap-1">
         <Image
           src="/icons/logo.svg"
-          width={32}
-          height={32}
-          alt="meetings"
+          width={150}
+          height={150}
+          alt="Camlink"
           className="max-sm:size-10"
         />
-        <p className="text-[26px] font-semibold text-white max-sm:hidden">
-          Meetings
-        </p>
+        {/* <p className="text-[26px] font-semibold text-white max-sm:hidden">
+          CamLink
+        </p> */}
       </Link>
       <div className="flex-between gap-5">
          {/* Clerk - User management */}

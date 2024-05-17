@@ -8,7 +8,7 @@ import '@stream-io/video-react-sdk/dist/css/styles.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Meetings:",
+  title: "Camlink:",
   description: "Video Calling App",
   icons:{
     icon:'/icons/logo.svg'
@@ -25,7 +25,7 @@ export default function RootLayout({
       <ClerkProvider appearance={
         {
           layout:{
-            logoImageUrl:'/icons/yoom-logo.svg',
+            logoImageUrl:'/icons/logo.svg',
             socialButtonsVariant:'iconButton'
           },
           variables:{
