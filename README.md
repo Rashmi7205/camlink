@@ -1,6 +1,3 @@
-Sure! Here's a README file for the "zoom-clone" project on GitHub, including details about the project, features, technologies used, setup instructions, and a link to the live website.
-
----
 
 # CamLink
 
